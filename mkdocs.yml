@@ -1,0 +1,10 @@
+site_name: My Awesome Documentation
+theme:
+  name: mkdocs
+  locale: jp
+  highlightjs: true
+plugins:
+  - search
+  - with-pdf:
+      cover_title: Awesome Documentation
+      cover_subtitle: with PDF
