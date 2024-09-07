@@ -7,7 +7,7 @@ SHELL := /bin/bash
 
 TARGET := site/pdf/document.pdf
 
-$(TARGET): mkdocs.yml docs/*
+$(TARGET): mkdocs.yml $(shell find docs/ -type f,l)
 	@uv run mkdocs build
 
 build: $(TARGET) ## build artifacts
